@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Elementos decorativos de fondo removidos por feedback */
+/* Decorative background elements removed by request */
 
 @keyframes pulse {
   0%,
@@ -120,7 +120,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Social Links - MANTENIDOS SIMPLES */
+/* Social links */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +154,7 @@ main a {
   width: 100%;
 }
 
-/* Cards Ultra Tecnológicas */
+/* Link cards */
 .card {
   background: #fffaf0;
   border: 2px solid #6d5b4d;
@@ -172,7 +172,7 @@ main a {
   box-shadow: 6px 6px 0px #b07e3a;
 }
 
-/* Efecto neobrutalista sólido (removidos efectos cyan antiguos) */
+/* Solid offset shadow */
 .card:hover::before {
   display: none;
 }
@@ -300,7 +300,7 @@ main a {
   color: #4f3b31;
 }
 
-.subtítulo {
+.subtitle {
   font-size: 20px;
   text-align: center;
   margin: 20px 0 30px;
