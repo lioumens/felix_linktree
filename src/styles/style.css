@@ -5,13 +5,13 @@
 }
 
 body {
-  font-family: 'Aldrich', sans-serif;
-  background: #0a0a0a;
+  font-family: 'DM Sans', sans-serif;
+  background: #eee5d2;
   background-image:
-    linear-gradient(rgba(49, 46, 129, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(49, 46, 129, 0.15) 1px, transparent 1px);
-  background-size: 50px 50px;
-  color: white;
+    radial-gradient(circle at 15% 10%, rgba(176, 126, 58, 0.18) 0 1px, transparent 1px),
+    linear-gradient(90deg, rgba(112, 83, 54, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px, 84px 84px;
+  color: #2d2520;
   min-height: 100vh;
   padding: 40px 20px;
   position: relative;
@@ -56,7 +56,7 @@ header {
   width: 120px;
   height: 120px;
   margin: 0 auto 20px;
-  background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+  background: linear-gradient(135deg, #3b2924 0%, #171313 100%);
   border-radius: 50%;
   border: 3px solid transparent;
   background-clip: padding-box;
@@ -66,8 +66,8 @@ header {
   justify-content: center;
   font-size: 60px;
   box-shadow:
-    0 0 20px rgba(49, 46, 129, 0.3),
-    inset 0 0 20px rgba(49, 46, 129, 0.1);
+    0 0 20px rgba(112, 83, 54, 0.25),
+    inset 0 0 20px rgba(176, 126, 58, 0.12);
 }
 
 .profile-image::before {
@@ -76,7 +76,7 @@ header {
   inset: -3px;
   border-radius: 50%;
   padding: 3px;
-  background: linear-gradient(135deg, #1e293b, #312e81, #1e293b);
+  background: linear-gradient(135deg, #b07e3a, #6d2638, #b07e3a);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -95,23 +95,25 @@ header {
 }
 
 h1 {
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 10px;
-  background: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 50%, #94a3b8 100%);
+  color: #3b2924;
+  background: linear-gradient(135deg, #3b2924 0%, #6d2638 55%, #8a622f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .location {
-  color: #999;
+  color: #6d5b4d;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .description {
-  color: #ccc;
+  color: #6b5144;
   font-size: 13px;
   margin-bottom: 25px;
 }
@@ -127,7 +129,7 @@ h1 {
 }
 
 .social-links a {
-  color: white;
+  color: #6d2638;
   text-decoration: none;
   font-size: 23px;
   transition: transform 0.2s;
@@ -152,8 +154,8 @@ main a {
 
 /* Cards Ultra Tecnológicas */
 .card {
-  background: #0f172a;
-  border: 2px solid #f8fafc;
+  background: #fffaf0;
+  border: 2px solid #6d5b4d;
   border-radius: 12px;
   padding: 16px 20px;
   margin-bottom: 25px;
@@ -165,7 +167,7 @@ main a {
   cursor: pointer;
   position: relative;
   width: 100%;
-  box-shadow: 6px 6px 0px #312e81;
+  box-shadow: 6px 6px 0px #b07e3a;
 }
 
 /* Efecto neobrutalista sólido (removidos efectos cyan antiguos) */
@@ -179,54 +181,54 @@ main a {
 
 .card:hover {
   transform: translate(3px, 3px);
-  box-shadow: 3px 3px 0px #312e81;
-  border-color: #312e81;
-  background: #1e293b;
+  box-shadow: 3px 3px 0px #b07e3a;
+  border-color: #6d2638;
+  background: #f7eddc;
 }
 
 .card .icon {
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, rgba(49, 46, 129, 0.2) 0%, rgba(30, 41, 59, 0.2) 100%);
-  border-radius: 16px;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, rgba(176, 126, 58, 0.16) 0%, rgba(109, 38, 56, 0.1) 100%);
+  /* border-radius: 16px; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 32px;
   flex-shrink: 0;
-  border: 2px solid rgba(49, 46, 129, 0.3);
+  /* border: 2px solid rgba(49, 46, 129, 0.3); */
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow:
-    0 4px 20px rgba(49, 46, 129, 0.4),
+    0 4px 20px rgba(109, 38, 56, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   position: relative;
 }
 
 .card .icon img {
-  width: 37px;
-  height: 37px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+  filter: sepia(0.25) drop-shadow(0 0 8px rgba(176, 126, 58, 0.35));
   transition: filter 0.3s;
 }
 
 .card:hover .icon img {
-  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8)) brightness(1.2);
+  filter: sepia(0.15) drop-shadow(0 0 14px rgba(176, 126, 58, 0.55)) brightness(1.05);
 }
 
 .card:hover .icon::before {
   opacity: 0.5;
-  background: linear-gradient(135deg, #1e293b, #312e81, #1e293b);
+  background: linear-gradient(135deg, #6d2638, #b07e3a, #6d2638);
   animation: rotate 2s linear infinite;
 }
 
 .card:hover .icon {
   transform: scale(1.15) rotate(5deg);
-  background: linear-gradient(135deg, rgba(49, 46, 129, 0.3) 0%, rgba(30, 41, 59, 0.3) 100%);
-  border-color: rgba(79, 70, 229, 0.6);
+  background: linear-gradient(135deg, rgba(176, 126, 58, 0.22) 0%, rgba(109, 38, 56, 0.18) 100%);
+  border-color: rgba(176, 126, 58, 0.65);
   box-shadow:
-    0 6px 30px rgba(49, 46, 129, 0.6),
-    0 0 40px rgba(30, 41, 59, 0.4),
+    0 6px 30px rgba(109, 38, 56, 0.3),
+    0 0 40px rgba(176, 126, 58, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
@@ -235,41 +237,72 @@ main a {
   grid-column: 2;
 }
 
+.card-content h2:only-child {
+  margin-bottom: 0;
+}
+
+.song-card-link {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+
+.listening-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  grid-column: 1 / -1;
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid #c8ae88;
+}
+
+.listening-links a {
+  padding: 10px 12px;
+  border: 1px solid #c8ae88;
+  border-radius: 8px;
+  color: #6d2638;
+  font-size: 13px;
+  text-align: center;
+}
+
+.listening-links a:hover {
+  background: #f1dfc5;
+  border-color: #6d2638;
+}
+
 .card h2 {
-  font-size: 16px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 6px;
-  background: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #3b2924;
+  background: none;
   transition: all 0.3s;
 }
 
 .card:hover h2 {
-  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #6d2638;
+  background: none;
   letter-spacing: 1px;
 }
 
 .card p {
-  font-size: 12px;
-  color: #aaa;
+  font-size: 13px;
+  color: #806b5b;
   transition: color 0.3s;
   line-height: 1.5;
 }
 
 .card:hover p {
-  color: #e0e0e0;
+  color: #4f3b31;
 }
 
 .subtítulo {
   font-size: 20px;
   text-align: center;
   margin: 20px 0 30px;
-  background: linear-gradient(135deg, #f8fafc 0%, #312e81 100%);
+  background: linear-gradient(135deg, #6d2638 0%, #b07e3a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -284,10 +317,8 @@ main a {
   font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #f8fafc 0%, #312e81 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #6d2638;
+  background: none;
 }
 
 .video-container {
@@ -327,7 +358,7 @@ main a {
 .video-title {
   flex: 1;
   font-size: 14px;
-  color: #ccc;
+  color: #806b5b;
 }
 
 .copy-link {
@@ -335,21 +366,21 @@ main a {
   align-items: center;
   gap: 5px;
   font-size: 12px;
-  color: #f8fafc;
+  color: #6d2638;
   cursor: pointer;
   white-space: nowrap;
   padding: 6px 12px;
   border-radius: 8px;
-  background: rgba(49, 46, 129, 0.1);
-  border: 1px solid rgba(49, 46, 129, 0.3);
+  background: rgba(176, 126, 58, 0.1);
+  border: 1px solid rgba(109, 38, 56, 0.3);
   transition: all 0.3s;
 }
 
 .copy-link:hover {
-  color: #fff;
-  background: rgba(49, 46, 129, 0.2);
-  border-color: rgba(79, 70, 229, 0.6);
-  box-shadow: 0 0 20px rgba(49, 46, 129, 0.4);
+  color: #6d2638;
+  background: rgba(176, 126, 58, 0.2);
+  border-color: rgba(109, 38, 56, 0.6);
+  box-shadow: 0 0 20px rgba(176, 126, 58, 0.35);
   transform: translateY(-2px);
 }
 
@@ -436,9 +467,14 @@ main a {
   }
 
   .card .icon {
-    width: 48px;
-    height: 48px;
-    font-size: 28px;
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+
+  .card .icon img {
+    width: 44px;
+    height: 44px;
   }
 
   .card h2 {
